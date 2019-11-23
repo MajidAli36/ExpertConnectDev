@@ -1,0 +1,484 @@
+body.profile-page{
+	background: #fff;
+}
+.profile-page header{
+	border-bottom: 2px solid #eee;
+	margin-bottom: 50px;
+	position: static;
+	padding: 15px 0;
+	float: left;
+}
+.profile-page header nav a{
+	color: #000;
+}
+.profile-page .my-account a{
+	color: #cacaca;
+}
+.profile-page .my-account span:after{
+	color: #000;
+}
+.profile-page .my-account ul li{
+	background: #000;
+}
+.menu-search{
+	display: none;
+}
+.footer{
+	background: #000;
+}
+.profile-data{
+	width: 100%;
+	padding: 20px 0 60px;
+	float: left;
+}
+.profile-menu{
+	width: 290px;
+	float: left;
+}
+.profile-menu h2, .profile-content h3{
+	font-size: 36px;
+	color: #031823;
+	margin: 0 0 20px;
+}
+.profile-menu ul li{
+	padding: 20px 0;
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+}
+.profile-menu ul li a{
+	font-size: 18px;
+	color: #041823;
+	padding: 0 0 0 55px;
+	position: relative;
+}
+.profile-menu ul li a span:before{
+  content: "\e906";
+	font-family: 'icomoon';
+  font-size: 25px;
+  color: #cccccc;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.profile-menu ul li a span:before{
+	content: "";
+	background: url(../img/my-profile.png) left top no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+.profile-menu ul li:nth-child(2) span:before{
+	background: url(../img/email-pass.png) left top no-repeat;
+}
+.profile-menu ul li:nth-child(3) span:before{
+	background: url(../img/phone-icon.png) left top no-repeat;
+}
+.profile-menu ul li a.active, .profile-menu ul li a:hover{
+	color: #bdc92b;
+}
+.profile-menu .view-btn{
+	color: #bdc92b;
+	font-size: 18px;
+	font-weight: 700;
+	border: 2px solid #bdc92b;
+  border-radius: 30px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  text-align: center;
+  margin: 45px 0;
+}
+.profile-menu ul.myaccount-menu.myaccount-menu-mob{
+	display: none;
+}
+.profile-content{
+	width: 625px;
+	float: left;
+	margin: 0 0 0 100px;
+}
+.profile-info{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.profile-info .profile-img{
+	display: inline-block;
+}
+.profile-info .profile-img img{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.profile-name{
+	padding: 0 0 0 40px;
+	max-width: 330px;
+}
+.profile-info strong{
+	font-size: 20px;
+	font-weight: 700;
+	color: #596166;
+	margin: 0 0 5px;
+}
+.profile-info span{
+	font-size: 18px;
+	color: #676768;
+	display: block;
+}
+.profile-content .fields{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 0 0;
+}
+.profile-content .fields label{
+	font-size: 16px;
+	font-weight: 700;
+	color: #596166;
+	display: block;
+	width: 100%;
+	padding: 0 0 15px;
+}
+.profile-content .female, .profile-content .male{
+	display: block;
+}
+.profile-content .fields.gender label:before{
+	display: none;
+}
+.profile-content .fields.gender span{
+	padding: 0 0 0 40px;
+	position: relative;
+	display: block;
+}
+.profile-content .fields.gender span:before{
+  font-family: 'icomoon';
+  font-size: 30px;
+  color: #ccc;
+  content: "\e905";
+  display: block;
+  position: absolute;
+	left: 0;
+	top: -5px;
+	color: #bdc92b;
+}
+.profile-content .fields p{
+	font-size: 18px;
+	color: #676768;
+	line-height: 30px;
+	padding: 0;
+	text-align: left;
+}
+.profile-content h4{
+	font-size: 24px;
+	font-weight: 700;
+	color: #262628;
+	margin: 40px 0 20px;
+}
+.profile-content h4 span{
+	font-size: 18px;
+	font-weight: 400;
+	color: #bdbdbd;
+	padding: 0 0 0 20px;
+}
+.profile-content button{
+	float: right;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	background: #bdc92b;
+  border-radius: 30px;
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  margin: 45px 0;
+  cursor: pointer;
+}
+.profile-content .fields input, .select-box select{
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	color: #676768;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #e6e6e6;
+}
+.profile-content .fields.name input{
+	max-width: 400px;
+}
+.fields-edit.gender input{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin  : 0;
+	padding : 0;
+	opacity : 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	z-index: 1;
+}
+.fields-edit.gender input + label{
+	display: flex;
+	align-items: center;
+	height: 45px;
+	font-size: 16px;
+	color: #a0a8b1;
+	padding: 0 0 0 70px;
+	cursor: pointer;
+}
+.fields-edit.gender input:checked + label span.checkmark:after, .fields-edit.gender .female:hover span.checkmark:after, .fields-edit.gender .male:hover span.checkmark:after{
+  background: #c9cc27;
+}
+.fields-edit.gender input:checked + label:before, .fields-edit.gender .female:hover label:before, .fields-edit.gender .male:hover label:before{
+	color: #c9cc27;
+}
+.profile-content .fields-edit.gender > div label:before{
+	font-family: 'icomoon';
+	font-size: 30px;
+	color: #c9cc27;
+	content: "\e906";
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 30px;
+}
+.profile-content .fields-edit.gender .male label:before{
+	content: "\e905";
+}
+.fields-edit.gender .male, .fields-edit.gender .female{
+	position: relative;
+	display: inline-block;
+}
+.profile-content .fields-edit.gender span.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 4px solid #ccc;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-content .fields-edit.gender span.checkmark:before{
+	display: none;
+}
+.profile-content .fields-edit.gender span.checkmark:after {
+	content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+}
+.profile-content .fields textarea{
+	width: 100%;
+	color: #676768;
+	border: 2px solid #eeeeee;
+	border-radius: 5px;
+	padding: 10px;
+}
+.profile-content .fields .fields-item{
+	width: 46%;
+	display: inline-block;
+}
+.profile-content .fields .fields-item.zipcode{
+	margin-left: 8%;
+}
+.select-box{
+	width: 100%;
+	display: block;
+	position: relative;
+}
+.select-box:after{
+  content: "\e907";
+  font-size: 15px;
+  font-family: icomoon;
+  color: #676768;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 39px;
+  line-height: 39px;
+  z-index: -1;
+}
+.select-box select{
+	width: 100%;
+	background: transparent;
+  appearance:none;
+	-webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+}
+.profile-content .fields.birthday .fields-item{
+	width: 28%;
+}
+.profile-content .fields.birthday .fields-item.month{
+	margin: 0 8%;
+}
+.email-and-password .profile-content .fields:first-of-type, .phone-verification .profile-content .fields:first-of-type{
+	padding-top: 20px;
+}
+.profile-content .fields input[type="password"]{
+	font-size: 50px;
+	line-height: 40px;
+}
+.profile-content .fields input[type="password"]::-webkit-input-placeholder{
+  font-size: 50px;
+  line-height: 40px;
+}
+.profile-content .fields input[type="password"]::-moz-placeholder{
+  font-size: 50px;
+  line-height: 40px;
+}
+.profile-content .fields input[type="password"]:-moz-placeholder{
+  font-size: 50px;
+  line-height: 40px;
+}
+.profile-content .fields input[type="password"]:-ms-input-placeholder{
+  font-size: 50px;
+  line-height: 40px;
+}
+.profile-content .fields input[type="password"]:-o-input-placeholder{
+  font-size: 50px;
+  line-height: 40px;
+}
+.email-and-password{
+	min-height: 70vh;
+}
+.phone-verify{
+	width: 100%;
+	position: relative;
+	padding: 0 0 0 130px;
+}
+.phone-verify .select-box{
+	width: 80px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.profile-content .fields .phone-verify input{
+	width: 100%;
+	display: inline-block;
+	text-indent: 15px;
+}
+.phone-verification .profile-content .fields p{
+	max-width: 400px;
+}
+.profile-content .fields.phone-val{
+	text-align: center;
+	justify-content: center;
+}
+.profile-content .fields.phone-val .fields-item{
+	width: 70px;
+	display: inline-block;
+	margin: 0 17px;
+}
+.profile-content .fields.phone-val .fields-item input{
+	text-align: center;
+	color: #000;
+	font-size: 28px;
+	font-weight: 700;
+}
+.profile-content .fields.phone-val input::-webkit-input-placeholder{
+  color: #000;
+}
+.profile-content .fields.phone-val input::-moz-placeholder{
+  color: #000;
+}
+.profile-content .fields.phone-val input:-moz-placeholder{
+  color: #000;
+}
+.profile-content .fields.phone-val input:-ms-input-placeholder{
+  color: #000;
+}
+.profile-content .fields.phone-val input:-o-input-placeholder{
+  color: #000;
+}
+.phone-validation .profile-content{
+	max-width: 420px;
+}
+.profile-content button.verifyOTP{
+	margin: 0 auto 20px;
+}
+.resent-sms{
+	justify-content: center;
+}
+.resent-sms a{
+	font-size: 18px;
+	color: #bdc92b;
+	display: inline-block;
+	text-decoration: none;
+}
+.accord-btn{
+	font-size: 18px;
+	color: #041823;
+}
+.accord-btn:after{
+	color: #cdd65f;
+	font-weight: 700;
+}
+.expand_content p{
+	font-size: 16px;
+	line-height: 25px;
+}
+.payment-methods .profile-content{
+	max-width: 540px;
+}
+.payments-added li{
+	line-height: 45px;
+	border-bottom: 2px solid #f0f0f0;
+	padding: 15px 0;
+}
+.payments-added li img{
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.payments-added li span{
+	font-size: 18px;
+	color: #bdbdbd;
+	margin: 0 35px;
+	display: inline-block;
+}
+.payments-added li a{
+	font-size: 18px;
+	color: #bdc92b;
+	float: right;
+}
+.payment-methods .accordian{
+	padding: 20px 0 0;
+}
+.profile-content .fields input[type="password"]::-webkit-input-placeholder{ 
+  font-size: 20px;
+}
+.profile-content .fields input[type="password"]::-moz-placeholder{ 
+  font-size: 20px;
+}
+.profile-content .fields input[type="password"]:-ms-input-placeholder{ 
+  font-size: 20px;
+}
+.profile-content .fields input[type="password"]:-moz-placeholder{ 
+  font-size: 20px;
+}
+.profile-content button.backButton{
+	margin-right: 15px;
+}
+.profile-content button.change-profile-img{
+	position: absolute;
+	right: 0;
+	margin: 0;
+}
